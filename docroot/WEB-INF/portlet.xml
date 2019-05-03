@@ -2,21 +2,57 @@
 
 <portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
 	<portlet>
-		<portlet-name>ic2-conflictos</portlet-name>
-		<display-name>ic2-conflictos-portlet</display-name>
-		<portlet-class>com.liferay.util.bridges.mvc.MVCPortlet</portlet-class>
+		<portlet-name>ic2-productos-duplicados</portlet-name>
+		<display-name>Ic2 Productos Duplicados</display-name>
+		<portlet-class>
+			co.com.ic2.conflictos.portlet.ProductosDuplicadosPortlet
+		</portlet-class>
 		<init-param>
 			<name>view-template</name>
-			<value>/view.jsp</value>
+			<value>/html/productosduplicados/view.jsp</value>
 		</init-param>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
 		</supports>
 		<portlet-info>
-			<title>ic2-conflictos-portlet</title>
-			<short-title>ic2-conflictos-portlet</short-title>
-			<keywords>ic2-conflictos-portlet</keywords>
+			<title>Ic2 Productos Duplicados</title>
+			<short-title>Ic2 Productos Duplicados</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>ic2-productos-no-clasificados</portlet-name>
+		<display-name>Ic2 Productos No Clasificados</display-name>
+		<portlet-class>
+			co.com.ic2.conflictos.portlet.ProductosNoClasificadosPortlet
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/productosnoclasificados/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Ic2 Productos No Clasificados</title>
+			<short-title>Ic2 Productos No Clasificados</short-title>
+			<keywords></keywords>
 		</portlet-info>
 		<security-role-ref>
 			<role-name>administrator</role-name>

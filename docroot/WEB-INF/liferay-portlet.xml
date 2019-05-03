@@ -3,11 +3,28 @@
 
 <liferay-portlet-app>
 	<portlet>
-		<portlet-name>ic2-conflictos</portlet-name>
+		<portlet-name>ic2-productos-duplicados</portlet-name>
 		<icon>/icon.png</icon>
+		<private-session-attributes>false</private-session-attributes>
 		<header-portlet-css>/css/main.css</header-portlet-css>
-		<footer-portlet-javascript>/js/main.js</footer-portlet-javascript>
-		<css-class-wrapper>ic2-conflictos-portlet</css-class-wrapper>
+		<footer-portlet-javascript>
+			/js/main.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>
+			ic2-productos-duplicados-portlet
+		</css-class-wrapper>
+	</portlet>
+	<portlet>
+		<portlet-name>ic2-productos-no-clasificados</portlet-name>
+		<icon>/icon.png</icon>
+		<private-session-attributes>false</private-session-attributes>
+		<header-portlet-css>/css/main.css</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/main.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>
+			ic2-productos-no-clasificados-portlet
+		</css-class-wrapper>
 	</portlet>
 	<role-mapper>
 		<role-name>administrator</role-name>
